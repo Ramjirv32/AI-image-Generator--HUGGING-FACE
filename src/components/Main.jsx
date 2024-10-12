@@ -43,11 +43,11 @@ const Main = () => {
   };
 
   useEffect(() => {
-    // Automatically reset loading after 120 seconds
+  
     if (loading) {
       const timer = setTimeout(() => {
         setLoading(false);
-      }, 120000); // 120 seconds
+      }, 120000); 
       return () => clearTimeout(timer);
     }
   }, [loading]);
